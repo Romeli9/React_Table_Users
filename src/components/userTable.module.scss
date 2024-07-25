@@ -1,0 +1,80 @@
+$user-table-max-width: 1200px;
+$table-padding: 20px;
+$input-padding: 10px;
+$border-color: #ccc;
+$primary-color: #007BFF;
+
+.user-table-container {
+  width: 100%;
+  max-width: $user-table-max-width;
+  margin: 0 auto;
+  padding: $table-padding;
+}
+
+input {
+  width: 100%;
+  padding: $input-padding;
+  margin-bottom: $table-padding;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+
+  th,
+  td {
+    border: 1px solid $border-color;
+    padding: $input-padding;
+    text-align: left;
+    overflow: hidden;
+    min-width: 50px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 400px;
+
+  }
+
+
+
+  th {
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 10px;
+    }
+
+    &.sorted-asc::after {
+      content: " ▲";
+      color: $primary-color;
+    }
+
+    &.sorted-desc::after {
+      content: " ▼";
+      color: $primary-color;
+    }
+  }
+
+  .table__text {
+    width: calc(100% - 10px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .resizer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    cursor: ew-resize;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.2;
+  }
+}
