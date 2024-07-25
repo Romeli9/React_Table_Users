@@ -1,0 +1,36 @@
+$modal-bg-color: rgba(0, 0, 0, 0.5);
+$modal-padding: 20px;
+$modal-max-width: 500px;
+$button-bg-color: #007BFF;
+$button-color: white;
+$button-border-radius: 5px;
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $modal-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: $modal-padding;
+  border-radius: $button-border-radius;
+  max-width: $modal-max-width;
+  width: 100%;
+
+  button {
+    margin-top: $modal-padding / 2;
+    padding: $modal-padding / 2;
+    background: $button-bg-color;
+    color: $button-color;
+    border: none;
+    border-radius: $button-border-radius;
+    cursor: pointer;
+  }
+}
