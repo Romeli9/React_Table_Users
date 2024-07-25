@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# React_Table_Users
-=======
+Для запуска:
 1. npm install
 2. npm start
->>>>>>> master
