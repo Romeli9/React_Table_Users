@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { observer } from 'mobx-react';
 import styles from './userTable.module.scss';
-import UserModal from './userModal.js';
-import userStore from '../stores/userStore';
+import UserModal from './userModal.jsx';
+import userStore from '../stores/userStore.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
