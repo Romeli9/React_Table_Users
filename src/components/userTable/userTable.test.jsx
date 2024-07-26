@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import UserTable from './userTable.jsx';
-import userStore from '../stores/userStore.js';
+import userStore from '../../stores/userStore.js';
 
 jest.mock('../stores/userStore.js', () => ({
     fetchUsers: jest.fn(),
