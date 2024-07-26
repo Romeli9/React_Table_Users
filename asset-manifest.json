@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_Table_Users/static/css/main.af6c5c53.css",
+    "main.js": "/React_Table_Users/static/js/main.490efe65.js",
+    "static/js/453.3ab8d62e.chunk.js": "/React_Table_Users/static/js/453.3ab8d62e.chunk.js",
+    "index.html": "/React_Table_Users/index.html",
+    "main.af6c5c53.css.map": "/React_Table_Users/static/css/main.af6c5c53.css.map",
+    "main.490efe65.js.map": "/React_Table_Users/static/js/main.490efe65.js.map",
+    "453.3ab8d62e.chunk.js.map": "/React_Table_Users/static/js/453.3ab8d62e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af6c5c53.css",
+    "static/js/main.490efe65.js"
+  ]
+}
