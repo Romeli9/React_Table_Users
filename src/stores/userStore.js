@@ -19,7 +19,7 @@ class UserStore {
             console.error('Error fetching data:', error);
         }
     }
-
+    // поиск через запрос пользователей
     async search(query) {
         this.searchQuery = query;
         if (query.length === 0) {
@@ -40,6 +40,32 @@ class UserStore {
             }
         }
     }
+
+    // Метода поиска через filter апи
+    // selectedKey = '';
+    // visibleKey = 'Выберите фильтр поиска';
+    // async search(query) {
+    //     this.searchQuery = query;
+    //     if (query.length === 0) {
+    //         await this.fetchUsers();
+    //     } else {
+    //         try {
+    //             const encodedQuery = encodeURIComponent(query);
+    //             const response = await fetch(`https://dummyjson.com/users/filter?key=${this.selectedKey}&value=${encodedQuery}`);
+    //             console.log(response.url);
+    //             const data = await response.json();
+    //             this.users = data.users;
+    //         } catch (error) {
+    //             console.error('Error fetching data:', error);
+    //         }
+    //     }
+    // }
+
+    // handleSelect(key, key2) {
+    //     this.selectedKey = key;
+    //     this.visibleKey = key2;
+    // }
+    
 
     sortUsers(key) {
         let direction = 'asc';

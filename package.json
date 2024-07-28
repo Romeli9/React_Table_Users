@@ -2,12 +2,12 @@
   "name": "table",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://romeli9.github.io/React_Table_Users",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.0",
-    "jest": "^27.5.1",
     "jquery": "^3.7.1",
     "jquery-resizable-columns": "^0.2.3",
     "mobx": "^6.13.1",
@@ -21,11 +21,16 @@
     "sass": "^1.77.8",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "gh-pages": "^5.0.0" 
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

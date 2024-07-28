@@ -51,11 +51,29 @@ const UserTable = observer(() => {
                 <input
                     type="text"
                     className="form-control"
-                    aria-label="Text input with dropdown button"
                     placeholder="Search..."
                     value={userStore.searchQuery}
                     onChange={handleSearch}
                 />
+                {/* Выпадающий список для поиска через filter */}
+                {/* <div className="dropdown">
+                    <button
+                        className="btn btn-outline-secondary dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        {userStore.visibleKey}
+                    </button>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a className="dropdown-item" href="#" onClick={() => userStore.handleSelect('firstName', 'Фио')}>Фио</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={() => userStore.handleSelect('age', 'Возраст')}>Возраст</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={() => userStore.handleSelect('gender', 'Пол')}>Пол</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={() => userStore.handleSelect('phone', 'Номер телефона')}>Номер телефона</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={() => userStore.handleSelect('address.city', 'Адрес')}>Адрес</a></li>
+                    </ul>
+                </div> */}
             </div>
             <table>
                 <thead>
